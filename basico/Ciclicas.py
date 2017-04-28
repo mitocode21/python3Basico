@@ -1,6 +1,3 @@
-# fors en array http://www.python-course.eu/python3_for_loop.php
-# https://www.tutorialspoint.com/python3/python_for_loop.htm
-
 for i in range(0, 5):  # range(2, 5):
     print("Iteración N° " + str(i))
 
