@@ -1,22 +1,20 @@
 class Persona:
 
-    codigo = 0
+    def __init__(self, codigo, nombre, edad):
+        self.codigo = codigo
+        self._nombre = nombre
+        self.__edad = edad
 
-    def __init__(self, nombre):
-        self.codigo = 5
-        self.nombre = nombre
-
-    def saludar(self):
+    def __saludar(self):
         print("Hola " + self.nombre)
 
 
-persona1 = Persona("Mito")
-print(persona1.nombre)
+persona1 = Persona(1, "Mito", 26)
 print(persona1.codigo)
+print(persona1._nombre)
+print(persona1._Persona__edad)
 
-persona2 = Persona("Code")
-print(persona2.nombre)
-print(persona2.codigo)
-
-persona3 = Persona("MitoCode")
-persona3.saludar()
+persona1.nombre = "Code"
+persona1._Persona__edad = 27
+persona1._Persona__saludar()
+print(persona1._Persona__edad)
