@@ -1,3 +1,3 @@
 def saludar():
     print("Hola")
-    return
+saludur()
